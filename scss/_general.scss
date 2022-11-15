@@ -22,7 +22,8 @@ body {
    margin: 0;
    padding: 0;
    overflow-x: hidden;
-   font-family: "Open Sans";
+   font-family: "Open Sans", "Arial", sans-serif;
+   background-color: var(--main-body-bg-color);
 }
 
 h1,
@@ -31,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: "Russo One";
+   font-family: "Russo One", "Arial", sans-serif;
 }
 
 a {

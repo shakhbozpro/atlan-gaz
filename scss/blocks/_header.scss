@@ -1,0 +1,81 @@
+/* Site header */
+.site-header {
+   padding-top: 18px;
+}
+
+.site-header__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.site-header__start {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 55px;
+}
+
+.site-header__logo {
+   margin-bottom: 15px;
+}
+
+.site-header__advice-link {
+   margin-bottom: -30px;
+   line-height: 18px;
+   color: var(--main-blue-color);
+}
+
+.site-header__end {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.site-header__tel-link {
+   font-family: "Russo One";
+   font-size: 24px;
+   line-height: 29px;
+   margin-bottom: 5px;
+   color: var(--main-gray-color);
+}
+
+.site-header__question-link {
+   font-weight: 700;
+   line-height: 22px;
+   text-decoration: underline;
+   color: var(--main-blue-color);
+}
+
+@include mobile-first (450px) {}
+
+@include mobile-first (768px) {
+   .site-header__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .site-header__start {
+      flex-direction: row;
+      margin-bottom: 0;
+   }
+
+   .site-header__logo {
+      display: flex;
+      align-items: center;
+      margin-right: 21px;
+      margin-bottom: 0;
+
+      &::after {
+         content: "";
+         display: inline-block;
+         width: 1px;
+         height: 33px;
+         margin-bottom: -30px;
+         margin-left: 24px;
+         background-color: #ffffff;
+      }
+   }
+}

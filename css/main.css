@@ -1,4 +1,55 @@
-/* Variables */ /* Normalize */
+/* Variables */
+:root {
+  --main-body-bg-color: #2d2d2d;
+  --main-sections-bg-color: #2c3237;
+  --main-blue-color: #2194ff;
+  --main-gray-color: #f1f1f1;
+  --main-dark-gray-color: #2d2d2d;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Russo One";
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/russo-one-v14-latin-regular.woff2") format("woff2"), url("../fonts/russo-one-v14-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-regular.eot");
+  src: url("../fonts/open-sans-v34-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin_cyrillic-regular.woff") format("woff"), url("../fonts/open-sans-v34-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/open-sans-v34-latin_cyrillic-regular.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-300.eot");
+  src: url("../fonts/open-sans-v34-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/open-sans-v34-latin_cyrillic-300.woff") format("woff"), url("../fonts/open-sans-v34-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/open-sans-v34-latin_cyrillic-300.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-600.eot");
+  src: url("../fonts/open-sans-v34-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/open-sans-v34-latin_cyrillic-600.woff") format("woff"), url("../fonts/open-sans-v34-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/open-sans-v34-latin_cyrillic-600.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-700.eot");
+  src: url("../fonts/open-sans-v34-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/open-sans-v34-latin_cyrillic-700.woff") format("woff"), url("../fonts/open-sans-v34-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/open-sans-v34-latin_cyrillic-700.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-800.eot");
+  src: url("../fonts/open-sans-v34-latin_cyrillic-800.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin_cyrillic-800.woff2") format("woff2"), url("../fonts/open-sans-v34-latin_cyrillic-800.woff") format("woff"), url("../fonts/open-sans-v34-latin_cyrillic-800.ttf") format("truetype"), url("../fonts/open-sans-v34-latin_cyrillic-800.svg#OpenSans") format("svg");
+}
+/* Normalize */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -217,6 +268,17 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: var(--main-body-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo One", "Arial", sans-serif;
 }
 
 a {
@@ -228,4 +290,137 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Site header */
+.site-header {
+  padding-top: 18px;
+}
+
+.site-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 55px;
+}
+
+.site-header__logo {
+  margin-bottom: 15px;
+}
+
+.site-header__advice-link {
+  margin-bottom: -30px;
+  line-height: 18px;
+  color: var(--main-blue-color);
+}
+
+.site-header__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__tel-link {
+  font-family: "Russo One";
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 5px;
+  color: var(--main-gray-color);
+}
+
+.site-header__question-link {
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: underline;
+  color: var(--main-blue-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-header__start {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+  .site-header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 21px;
+    margin-bottom: 0;
+  }
+  .site-header__logo::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 33px;
+    margin-bottom: -30px;
+    margin-left: 24px;
+    background-color: #ffffff;
+  }
 }/*# sourceMappingURL=main.css.map */
