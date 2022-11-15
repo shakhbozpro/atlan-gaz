@@ -5,6 +5,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+   <!-- Styles -->
    <link rel="stylesheet" href="./css/main.css">
    <title>Атлантгаз</title>
 </head>
@@ -36,10 +39,87 @@
       <!-- Hero section start -->
       <section class="hero">
          <div class="container">
+            <div class="hero-wrapper">
+               <ul class="hero__weather-list">
+                  <li>
+                     <div class="hero__images-wrapper">
+                        <img class="hero__weather-img" src="./images/half-moon.svg" alt="Half moon" width="20"
+                           height="21">
+                        <img class="hero__weather-img" src="./images/right-arrow.svg" alt="Right arrow" width="16"
+                           height="16">
+                        <img src="./images/full-sun.svg" alt="Full sun" width="25" height="25">
+                     </div>
+                     <p class="hero__weather-desc">В любое время дня и ночи</p>
+                  </li>
 
+                  <li>
+                     <div class="hero__images-wrapper">
+                        <img class="hero__weather-img" src="./images/cloudy.svg" alt="Cloudy weather" width="22"
+                           height="23">
+                        <img class="hero__weather-img" src="./images/right-arrow.svg" alt="Right arrow" width="16"
+                           height="16">
+                        <img src="./images/snowflake.svg" alt="Snowflake" width="22" height="22">
+                     </div>
+                     <p class="hero__weather-desc">В любое время дня и ночи</p>
+                  </li>
+               </ul>
+
+               <h1 class="hero__heading">Доставим газ за 4 часа</h1>
+               <p class="hero__desc">
+                  в любую точку Москвы и Московской области
+               </p>
+               <a class="hero__order-link" href="#">Заказать доставку газа в газгольдер</a>
+               <p class="hero__order-desc">Доставка газа всегда по актуальным ценам</p>
+            </div>
          </div>
       </section>
       <!-- Hero section end -->
+
+      <!-- Feedback section start -->
+      <section class="feedback">
+         <div class="container">
+            <div>
+               <h2 class="feedback__heading">Отзывы наших клиентов</h2>
+               <ul class="feedback-list carousel slide list-unstyled" id="carouselExampleIndicators"
+                  data-bs-ride="true">
+                  <li class="feedback-list__btns-item carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                  </li>
+
+                  <li class="feedback-list__carousel-item carousel-inner d-flex">
+                     <div class="feedback-list__first-item carousel-item w-25 mx-auto active">
+                        <img src="./images/olga.png" class="d-block w-100" alt="..." width="201" height="240">
+                     </div>
+
+                     <div class="feedback-list__second-item carousel-item w-25 mx-auto">
+                        <img src="./images/roman.png" class="d-block w-100" alt="..." width="201" height="240">
+                     </div>
+
+                     <div class="feedback-third-item carousel-item w-25 mx-auto">
+                        <img src="./images/olga.png" class="d-block w-100" alt="...">
+                     </div>
+                  </li>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- Feedback section end -->
    </main>
    <!-- Site main end -->
 
@@ -51,6 +131,12 @@
    </footer>
    <!-- Site footer end -->
 
+
+   <!-- JavaScript of Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+   <!-- JavaScript -->
    <script src="./js/main.js"></script>
 </body>
 
